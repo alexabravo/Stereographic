@@ -20,7 +20,7 @@ class Raytracer(object):
       self.light = None
       self.framebuffer = []
       self.filename = filename
-      self.clear_color = color(51, 153, 255)
+      self.clear_color = color(0, 0, 51)
 
     def glClear(self):
       self.framebuffer = [[self.clear_color for x in range(self.width)] for y in range(self.height)]
